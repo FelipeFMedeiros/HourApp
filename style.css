@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+body {
+    background-color: rgb(61, 61, 163);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    height: 60%;
+
+}
+
+.footer {
+    background-color: #323235;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.copy {
+    font-family: "Rubik", sans-serif;
+    font-style: oblique;
+    margin: 0;
+}
+
+h1#h101 {
+    color: white;
+    font-size: 50px;
+    font-style: oblique;
+    font-weight: 1000;
+}
+
+div#msg {
+    text-align: center;
+    height: 50px;
+    font-family: "Rubik", Times, serif;
+    font-size: 23px;
+}
+
+div#foto {
+    text-align: center;
+    height: 270px;
+}
+
+div#msg2 {
+    text-align: center;
+    height: 25px;
+    font-family: "Rubik", Times, serif;
+    font-size: 23px;
+}
+
+
+
+/* estilo para validação */
+
+.validacao:active {
+    box-shadow: #d6d6e7 0 4px 8px inset;
+    transform: translateY(4px);
+    cursor: auto;
+}
+.validacao:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+.validacao:disabled {
+    border-color: #e1e0ee;
+    background-color: #e1e0ee;
+    cursor: auto;
+}
+
+/* estilo para a span de reset */
+.reset:active {
+    box-shadow: #d6d6e7 0 4px 8px inset;
+    transform: translateY(4px);
+    cursor: auto;
+}
+.reset:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+.reset:disabled {
+    border-color: #e1e0ee;
+    background-color: #e1e0ee;
+    cursor: auto;
+}
+
+.validacao, .reset {
+    height: 75%;
+    width: 100px;
+    font-size: 18px;
+    color: #101020;
+    font-weight: 500;
+    font-family: "Rubik", Times, serif;
+    text-align: center;
+    display: inline-block;
+    border-radius: 40px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* estilo para o elemento input */
+input[type="time"] {
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    font-family: "Rubik", Times, serif;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.time input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.time button {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.timeRes::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.timeRes::-webkit-calendar-picker-indicator:active {
+    font-size: 40px;
+    cursor: auto;
+}
+
+
+@keyframes clock {
+    0% {
+        font-size: 35px;
+        color: #424ae0;
+    }
+
+    50% {
+        font-size: 38px;
+        color: #424ae0;
+    }
+
+    100% {
+        color: #101020;
+        font-weight: 500;
+        line-height: 25px;
+        font-size: 35px;
+    }
+}

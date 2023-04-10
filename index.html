@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hora do Dia</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body onload='carregar()'>
+    <link rel="shortcut icon" href="images/day-1.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="carregar()">
     <header>
-        <h1 id = "h101">Hora do Dia:</h1>
+      <h1 id="h101">Hora do Dia:</h1>
     </header>
-    
-    <section>
-        <div id = "msg">
 
-        </div>
-        <div id = "foto">
-            <img id = "imagem" src="fotomanha.png" alt="Foto do Dia">
-        </div>
-        <div id = "msg2">
+    <div class="section">
+      <div id="msg"></div>
+      <div id="foto">
+        <img id="imagem" src="fotomanha.png" alt="Foto do Dia" />
+      </div>
+      <div id="msg2"></div>
+    </div>
 
-        </div>
-    </section>
+    <div class="time">
+      <input
+        class="timeRes"
+        id="hora-cons"
+        type="time"
+        name="hora-cons"
+        required
+      /> <br>  
+      <button class="validacao">Enviar</button>
+      <button class="reset">Resetar</button>
+    </div>
 
-    <footer>
-        <p>&copy; <strong>FelipeFMedeiros</strong></p>
+    <div>
+      <footer class="footer">
+        <p class="copy">&copy; FelipeFMedeiros</p>
+      </footer>
+    </div>
 
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
