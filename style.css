@@ -103,23 +103,39 @@ div#msg2 {
 }
 
 .validacao, .reset {
-    height: 75%;
-    width: 100px;
+    width: 90px;
     font-size: 18px;
     color: #101020;
     font-weight: 500;
     font-family: "Rubik", Times, serif;
     text-align: center;
-    display: inline-block;
     border-radius: 40px;
+
 }
 
 .time {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
 }
+
+.btn-container {
+    padding-right: 40px;
+}
+
+.time .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .time .validacao,
+  .time .reset {
+    margin: 0 5px;
+  }
 
 /* estilo para o elemento input */
 input[type="time"] {
@@ -143,8 +159,7 @@ input[type="time"] {
 }
 
 .time button {
-    display: inline-block;
-    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .timeRes::-webkit-calendar-picker-indicator {

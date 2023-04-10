@@ -11,6 +11,12 @@ var timeBtnInput = document.querySelector(".time input");
 const timeInput = document.querySelector(".timeRes");
 const resetBtn = document.querySelector(".reset");
 
+const horaFormatada = `${hora.toString().padStart(2, "0")}:${min
+  .toString()
+  .padStart(2, "0")}`;
+const inputTime = document.getElementById("hora-cons");
+inputTime.value = horaFormatada;
+
 // Função que desabiita o botão de enviar por um tempo
 function disableSendButton() {
   timeBtn.disabled = true;
@@ -128,11 +134,18 @@ timeBtn.addEventListener("click", () => {
   }
 });
 
+var data2 = new Date();
+var hora2 = data2.getHours();
+var min2 = data2.getMinutes();
+
 // Evento ao apertar o botão resetar
 resetBtn.addEventListener("click", () => {
-  var data2 = new Date();
-  var hora2 = data2.getHours();
-  var min2 = data2.getMinutes();
+  
+  const horaFormatada2 = `${hora2.toString().padStart(2, "0")}:${min2
+    .toString()
+    .padStart(2, "0")}`;
+  const inputTime2 = document.getElementById("hora-cons");
+  inputTime2.value = horaFormatada2;
 
   hora = hora2;
   min = min2;
