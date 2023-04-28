@@ -11,10 +11,3 @@
   <img align="left" alt="BR-PIC" height="40em" width="40" src="https://img.icons8.com/color/256/usa-circular.png"/>
 </div> 𝐄𝐍
 <p>This is a very basic time site that changes its theme according to the time. It was made for Brazilian Portuguese and the most used programming language was javascript.</p>
-
-<br>
-
-<div>
-  <img align="left" alt="BR-PIC" height="40em" width="40" src="https://img.icons8.com/color/256/spain2-circular.png"/>
-</div> 𝐄𝐒
-<p>Este es un sitio de tiempo muy básico que cambia su tema según el tiempo. Fue hecho para portugués brasileño y el lenguaje de programación más utilizado fue javascript.p>
